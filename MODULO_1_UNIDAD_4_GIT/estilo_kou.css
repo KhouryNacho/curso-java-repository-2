@@ -28,6 +28,10 @@ li {
     font-weight: bolder;
 }
 
+body {
+    background-color: rgb(155, 83, 1);
+}
+
 .destacados {
     color: rgb(0, 143, 55);
     font-weight: bolder;
@@ -47,4 +51,9 @@ li {
 }
 #gif {
     text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 510px 790px 580px;
+    margin-left: -500px;
 }
