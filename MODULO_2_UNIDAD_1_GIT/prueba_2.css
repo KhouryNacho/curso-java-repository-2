@@ -17,7 +17,7 @@ h1 {
 
 p {
     text-align: center;
-    color: rgb(138, 38, 7);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -29,8 +29,8 @@ li {
 }
 
 body {
-    background: rgb(98, 123, 10);
-    background: linear-gradient(90deg, rgba(98, 123, 10, 1) 0%, rgba(9, 121, 100, 1) 31%, rgba(0, 255, 104, 1) 92%);
+    background: rgb(9, 230, 217);
+    background: linear-gradient(77deg, rgba(9, 230, 217, 0.8757878151260504) 0%, rgba(19, 223, 164, 1) 48%, rgba(32, 214, 16, 0.8365721288515406) 100%);
 }
 
 .destacados {
@@ -43,6 +43,7 @@ body {
 
 #portada {
     text-align: center;
+    margin-left: 6px;
 }
 
 #audio {
@@ -61,4 +62,13 @@ body {
     display: grid;
     grid-template-columns: 510px 790px 580px;
     margin-left: -500px;
+}
+
+img {
+    border-radius: 10%;
+    border: 2px ridge rgb(22, 127, 153);
+    box-shadow: -1px 8px 25px 19px rgba(9, 173, 3, 0.5);
+    -webkit-box-shadow: -1px 8px 25px 19px rgba(52, 241, 4, 0.5);
+    -moz-box-shadow: -1px 8px 25px 19px rgba(60, 255, 0, 0.5);
+    margin-left: -3px;
 }
