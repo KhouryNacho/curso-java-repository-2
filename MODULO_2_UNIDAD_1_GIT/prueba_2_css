@@ -29,7 +29,8 @@ li {
 }
 
 body {
-    background-color: rgb(155, 83, 1);
+    background: rgb(98, 123, 10);
+    background: linear-gradient(90deg, rgba(98, 123, 10, 1) 0%, rgba(9, 121, 100, 1) 31%, rgba(0, 255, 104, 1) 92%);
 }
 
 .destacados {
@@ -43,15 +44,19 @@ body {
 #portada {
     text-align: center;
 }
+
 #audio {
     text-align: center;
 }
+
 #video {
     text-align: center;
 }
+
 #gif {
     text-align: center;
 }
+
 .container {
     display: grid;
     grid-template-columns: 510px 790px 580px;
