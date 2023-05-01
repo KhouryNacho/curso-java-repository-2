@@ -1,0 +1,36 @@
+body {
+    border: 2px ridge rgb(22, 127, 153);
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.rojo {
+    background-color: rgb(255, 72, 0);
+    width: 102px;
+    height: 102px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.azul {
+    background-color: rgb(17, 0, 255);
+    width: 102px;
+    height: 102px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde {
+    background-color: chartreuse;
+    width: 102px;
+    height: 102px;
+    font-size: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
