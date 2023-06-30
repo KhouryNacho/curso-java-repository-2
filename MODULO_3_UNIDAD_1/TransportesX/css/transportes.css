@@ -1,0 +1,180 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: rgb(114, 57, 0);
+    padding: 16px 0;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+}
+
+header img {
+size: 500px;
+}
+
+nav {
+    background-color: rgb(26, 183, 255);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    clear: both;
+    color: grey;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+nav ul li a.activo {
+    background-color: rgb(29, 73, 132);
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: teal;
+    font-weight: 400;
+}
+
+.bienvenidos {
+    color: teal;
+    font-weight: 400;
+}
+
+.testimonios {
+    width: 75%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonio {
+    background-color: rgb(255, 0, 0);
+    padding: 40px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: crimson;
+}
+
+.testimonio .cita {
+    font-weight:bold;
+    font-style: italic;
+    background-color: rgb(11, 184, 54);
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    display: block;
+    margin: 12px 0;
+}
+
+/*fin home*/
+
+/*inicio nosotros*/
+
+.group_origins p {
+    font-size: 12px;
+}
+
+
+.members {
+    text-align: center;
+}
+
+.modders {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.modder1 {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: silver;
+}
+
+.modder2 {
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgb(255, 179, 0);
+}
+
+.modder3 {
+    border: 2px solid rgb(39, 154, 175);
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgb(45, 93, 58);
+    padding-left: -50px;
+}
+
+.modder1 img {
+    border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 0 0 5px black;
+}
+
+.modder2 img {
+    border-radius: 50%;
+    max-width: 80%;
+    box-shadow: 0 0 5px rgb(255, 102, 0);
+}
+
+.modder3 img {
+    border-radius: 50%;
+    max-width: 70%;
+    box-shadow: 0 0 5px rgb(0, 26, 255);
+}
