@@ -178,3 +178,50 @@ h2 {
     max-width: 70%;
     box-shadow: 0 0 5px rgb(0, 26, 255);
 }
+
+/*fin nosotros*/
+
+/*inicio gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.gallery img {
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-right: 2%;
+}
+
+/*fin gallery*/
+
+/*inicio contact*/
+.contact {
+    display: flex;
+    gap: 24px;
+}
+
+.contact div {
+    width: 100%;
+}
+
+.data p {
+    font-size: 14px;
+}
+
+.data ul li {
+    font-size: 13px;
+}
+
+.form p {
+    display: flex;
+}
+
+.form p label {
+    min-width: 80px;
+}
