@@ -15,7 +15,7 @@ var testRouter = require('./routes/test');
 var contactRouter = require('./routes/contact');
 var galleryRouter = require('./routes/gallery');
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require ('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -29,21 +29,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-  secret: 'PW2023awqyeudj',
-  Cookie: { maxAge: null },
+  secret: 'f9qt2fasfasa',
+  cookie: { maxAge: null },
   resave: false,
   saveUninitialized: true
 }))
 
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/news', newsRouter);
-app.use('/gallery', galleryRouter);
-app.use('/contact', contactRouter);
-app.use('/test', testRouter);
-app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', adminRouter);
 
 secured = async (req, res, next) => {
 
@@ -68,6 +59,17 @@ secured = async (req, res, next) => {
   } // cierro catch error
 
 }
+
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/news', newsRouter);
+app.use('/gallery', galleryRouter);
+app.use('/contact', contactRouter);
+app.use('/test', testRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
+
 
 
 

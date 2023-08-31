@@ -3,7 +3,7 @@ var md5 = require('md5');
 
 async function getUserByUsernameAndPassword(user, password) {
     try {
-        var query = 'select * from users user_name = ? and user_password = ? limit 1';
+        var query = 'select * from users where user_name = ? and user_password = ? limit 1';
         var rows = await pool.query(query, [user, md5(password)]);
         return rows[0];
     } catch (error) {
@@ -11,4 +11,4 @@ async function getUserByUsernameAndPassword(user, password) {
     }
 }
 
-module.exports = {getUserByUsernameAndPassword}
+module.exports = { getUserByUsernameAndPassword }
